@@ -8,7 +8,7 @@
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5"
   },
-  "homepage": "http://shultztom.github.io/dog-generator-react",
+  "homepage": "https://shultztom.github.io/dog-generator-react",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
