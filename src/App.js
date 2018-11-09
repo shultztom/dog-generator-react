@@ -16,20 +16,36 @@ class App extends Component {
     const url = props.url;
     if (type === ".mp4") {
       return (
-        <video className="dogMedia" autoPlay="true" loop muted={true} controls>
+        <video
+          className="dogMedia"
+          autoPlay={true}
+          loop
+          muted={true}
+          key={url}
+          controls
+        >
           <source src={url} type="video/mp4" />
         </video>
       );
     } else if (type === "webm") {
       return (
-        <video className="dogMedia" autoPlay="true" loop muted={true} controls>
+        <video
+          className="dogMedia"
+          autoPlay={true}
+          loop
+          muted={true}
+          key={url}
+          controls
+        >
           <source src={url} type="video/webm" />
         </video>
       );
     } else if (type === null) {
       return <p />;
     } else {
-      return <img className="dogMedia" src={url} alt="Broken Dog Link" />;
+      return (
+        <img className="dogMedia" src={url} key={url} alt="Broken Dog Link" />
+      );
     }
   }
 
