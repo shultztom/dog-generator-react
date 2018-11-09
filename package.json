@@ -6,7 +6,7 @@
     "axios": "^0.18.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts": "1.1.5"
+    "react-scripts": "^2.1.1"
   },
   "homepage": "https://shultztom.github.io/dog-generator-react",
   "scripts": {
@@ -17,5 +17,11 @@
     "serveProd": "serve -s build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
