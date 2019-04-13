@@ -31,6 +31,12 @@ node('linux'){
         } catch (error) {
             sh "npm i -g gh-pages"
         }
+        withCredentials([string(credentialsId: 'github-email', variable: 'EMAIL')]) {
+            sh 'git config --global user.email "$EMAIL"'
+        }
+        withCredentials([string(credentialsId: 'github-name', variable: 'NAME')]) {
+            sh 'git config --global user.name "$NAME"'
+        }
         if(env.BRANCH_NAME == 'master'){
             sh "yarn deploy"
         }else{
