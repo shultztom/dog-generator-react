@@ -33,7 +33,7 @@ node('linux'){
         }
         if(env.BRANCH_NAME == 'master'){
             withCredentials([string(credentialsId: 'gh-pages-token', variable: 'TOKEN')]){
-                env.GH_TOKEN = $TOKEN
+                env.GH_TOKEN = "$TOKEN"
             }
             withCredentials([string(credentialsId: 'github-email', variable: 'EMAIL')]) {
                 sh 'git config --global user.email "$EMAIL" && git config --global user.name "shultztom" && yarn deployFromJenkins'
