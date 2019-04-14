@@ -26,11 +26,6 @@ node('linux'){
     }
 
     stage('Deploy to GH Pages'){
-        try{
-            sh "gh-pages --version"
-        } catch (error) {
-            sh "npm i -g gh-pages"
-        }
         if(env.BRANCH_NAME == 'master'){
             withCredentials([string(credentialsId: 'gh-pages-token', variable: 'TOKEN')]){
                 env.GH_TOKEN = "$TOKEN"
