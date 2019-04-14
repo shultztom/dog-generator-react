@@ -32,8 +32,11 @@ node('linux'){
             sh "npm i -g gh-pages"
         }
         if(env.BRANCH_NAME == 'master'){
+            withCredentials([string(credentialsId: 'gh-pages-token', variable: 'TOKEN')]){
+                env.GH_TOKEN = $TOKEN
+            }
             withCredentials([string(credentialsId: 'github-email', variable: 'EMAIL')]) {
-                sh 'git config --global user.email "$EMAIL" && git config --global user.name "shultztom" && yarn deploy'
+                sh 'git config --global user.email "$EMAIL" && git config --global user.name "shultztom" && yarn deployFromJenkins'
             }
         }else{
             echo 'Not deploying since not master branch'
