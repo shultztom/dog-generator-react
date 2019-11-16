@@ -1,15 +1,21 @@
 {
   "files": {
     "main.css": "/dog-generator-react/static/css/main.3fc71d62.chunk.css",
-    "main.js": "/dog-generator-react/static/js/main.bde8e004.chunk.js",
-    "main.js.map": "/dog-generator-react/static/js/main.bde8e004.chunk.js.map",
-    "runtime~main.js": "/dog-generator-react/static/js/runtime~main.22396350.js",
-    "runtime~main.js.map": "/dog-generator-react/static/js/runtime~main.22396350.js.map",
-    "static/js/2.51ae4c65.chunk.js": "/dog-generator-react/static/js/2.51ae4c65.chunk.js",
-    "static/js/2.51ae4c65.chunk.js.map": "/dog-generator-react/static/js/2.51ae4c65.chunk.js.map",
+    "main.js": "/dog-generator-react/static/js/main.4e1cb311.chunk.js",
+    "main.js.map": "/dog-generator-react/static/js/main.4e1cb311.chunk.js.map",
+    "runtime-main.js": "/dog-generator-react/static/js/runtime-main.2a396aa7.js",
+    "runtime-main.js.map": "/dog-generator-react/static/js/runtime-main.2a396aa7.js.map",
+    "static/js/2.8fdc70b0.chunk.js": "/dog-generator-react/static/js/2.8fdc70b0.chunk.js",
+    "static/js/2.8fdc70b0.chunk.js.map": "/dog-generator-react/static/js/2.8fdc70b0.chunk.js.map",
     "index.html": "/dog-generator-react/index.html",
-    "precache-manifest.4d1c8ddc7b031546bc13c53795815c38.js": "/dog-generator-react/precache-manifest.4d1c8ddc7b031546bc13c53795815c38.js",
+    "precache-manifest.a5972dbeb80fa50e1e6edf9b77a33078.js": "/dog-generator-react/precache-manifest.a5972dbeb80fa50e1e6edf9b77a33078.js",
     "service-worker.js": "/dog-generator-react/service-worker.js",
     "static/css/main.3fc71d62.chunk.css.map": "/dog-generator-react/static/css/main.3fc71d62.chunk.css.map"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a396aa7.js",
+    "static/js/2.8fdc70b0.chunk.js",
+    "static/css/main.3fc71d62.chunk.css",
+    "static/js/main.4e1cb311.chunk.js"
+  ]
 }
